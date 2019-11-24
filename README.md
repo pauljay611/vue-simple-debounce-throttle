@@ -21,7 +21,7 @@ Vue.use(VueStorage);
 
 ```
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="build.js"></script>
+<script src="https://pauljay611.github.io/vue-simple-debounce-throttle/build.js"></script>
 ```
 
 ## usage
