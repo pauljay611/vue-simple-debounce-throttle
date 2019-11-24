@@ -15,7 +15,6 @@ import Vue from 'vue';
 import VueStorage from 'vuestorage';
 
 Vue.use(VueStorage);
-
 ```
 
 ### browser
@@ -47,3 +46,19 @@ Invoke the event you want to debounce or throttle
     </div>
 </div>
 ```
+
+---
+
+Develop
+
+## Dev server
+
+`npm run dev`
+
+## Build production
+
+`npm run build`
+
+## Push production library
+
+`git subtree push --prefix dist origin gh-pages`
