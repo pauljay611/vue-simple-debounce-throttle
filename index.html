@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Document</title>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script src="build.js"></script>
+	</head>
+	<body>
+		<h1>Debounce & Throttle</h1>
+		<div id="app">
+			<button @click="_print">_print</button>
+			<button v-debounce:3000.click="_print">debounce</button>
+			<div
+				v-throttle:300.mousemove="_print"
+				style="width: 200px;height: 200px;border: 1px solid black;"
+			>
+				throttle
+			</div>
+		</div>
+		<script>
+			var app = new Vue({
+				el: '#app',
+				data: {
+					message: 'Hello!'
+				},
+				methods: {
+					_print() {
+						console.log(this.message)
+					}
+				}
+			})
+		</script>
+	</body>
+</html>
