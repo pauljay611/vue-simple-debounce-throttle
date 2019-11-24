@@ -59,6 +59,6 @@ Develop
 
 `npm run build`
 
-## Push production library
+## Push production
 
 `git subtree push --prefix dist origin gh-pages`
